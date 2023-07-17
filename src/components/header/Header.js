@@ -1,6 +1,6 @@
 import React from 'react';
 import 'firebase/compat/firestore';
-import { useFirestore } from '../../firebase/useFirestore';
+import { useFirestore } from '../../firebase/useFirebase';
 import './header.css';
 
 const Header = () => {

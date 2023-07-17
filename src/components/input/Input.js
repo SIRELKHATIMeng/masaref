@@ -2,8 +2,7 @@ import React from 'react';
 import { useRef } from 'react';
 import { useState } from 'react';
 import './input.css';
-
-import { useFirestore } from '../../firebase/useFirestore';
+import { useFirestore } from '../../firebase/useFirebase';
 
 const initialItem = { title: '', type: '', date: '' };
 

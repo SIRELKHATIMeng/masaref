@@ -1,33 +1,9 @@
+import { initializeApp } from "firebase/app"
+import { getFirestore } from 'firebase/firestore'
+import { getStorage } from 'firebase/storage'
 import firebase from 'firebase/compat/app'
-import 'firebase/firestore'
-// import 'firebase/[SERVICE_NAME]'
-//export
-export const auth = firebase.auth();
-export const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
-// compat packages are API compatible with namespaced code
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
-import 'firebase/compat/firestore';
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyAEpyZIBb3pV7oV4AjBPXao9fvggmeGb2A",
-  authDomain: "masaref-f2a9b.firebaseapp.com",
-  projectId: "masaref-f2a9b",
-  storageBucket: "masaref-f2a9b.appspot.com",
-  messagingSenderId: "1033582346596",
-  appId: "1:1033582346596:web:07e0baf2f2faecd4d0ba71"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-
 import { useState, useEffect } from 'react';
-import { db } from '../firebase/firebase';
+import { db } from './firebase.js';
 
 export const useFirestore = () => {
   const [items, setItems] = useState([]);
