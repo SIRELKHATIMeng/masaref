@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRef } from 'react';
+import 'firebase/compat/firestore';
 import { useFirestore } from '../../firebase/useFirestore';
 import './item.css';
 

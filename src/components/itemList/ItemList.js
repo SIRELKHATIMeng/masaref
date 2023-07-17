@@ -1,4 +1,5 @@
 import React from 'react';
+import 'firebase/compat/firestore';
 import { useFirestore } from '../../firebase/useFirestore';
 import Item from '../item/Item';
 import './itemList.css';
